@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'PortfolioBlue'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_6f6f5ebe88c9428a9b656a4176ff549b }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_06153c198581477dbb9041c3f2fff7f9 }}
