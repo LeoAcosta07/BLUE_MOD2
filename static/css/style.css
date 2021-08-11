@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+.flex{
+display: flex;
+}
+
+body, html{
+  height: 100%;
+  font-family:  "Roboto"  , sans-serif;
+  background-color: #389CEA;
+  text-align: center;
+  margin: 0%;
+  }
+
+/* HEADER */
+.container_geral {
+  width: 85%;
+  max-width: 950px;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.box1{
+ 
+  align-items: center;
+}
+.box2{
+  width: 90%;
+  max-width: 950px;
+  flex-direction: column;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+
+.container2 {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  justify-content: space-between;
+
+}
+
+
+.header {
+  background: #000000;
+  color: white;
+  padding: 2rem 0;
+  z-index: 100;
+  /* menu fixo*/
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header a {
+  text-decoration: none;
+}
+.show {
+  justify-content: space-between;
+  color:rgb(255, 255, 255);
+}
+
+.nombre{
+    color:#3DACFD;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* logo */
+.logo {
+  letter-spacing: 12px;
+  font-size: 1.3em;
+}
+
+.nombre {
+  letter-spacing: 15px;
+  font-size: 1.5em;
+
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+  background: #3DACFD;
+  color: #fdfa30;
+}
+
+.main {
+  padding-top: 12rem;
+}
+
+
+/* FIM HEADER */
+
+/* Body */
+
+section#first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #389CEA;
+}
+
+section#first div#img-rocket {
+  display: flex;
+  justify-content: center;
+
+}
+
+section#first div img {
+  width: 50%;
+  max-width: 580px;
+  border-radius: 5%;
+  max-height: 720px;
+  border: 4px solid rgb(255, 255, 255);
+}
+
+section#first div p {
+  font-size: 1.1vw;
+  text-align: justify;
+  line-height: 2.5rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+section#first div span {
+  color: #00388b;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+section#first div#first-text {
+  padding: 7rem;
+  max-width: 730px;
+}
+
+section#sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #389CEA;
+}
+
+section#sobre div#img-perfil img {
+  width: 60%;
+  border-radius: 50%;
+}
+
+section#sobre div#img-perfil {
+  display: flex;
+  justify-content: center;
+}
+
+section#sobre div#texto-sobre p {
+  font-size: 1.1vw;
+  text-align: justify;
+  color: #ffffff;
+  line-height: 2.5rem;
+  max-width: 1200px;
+}
+
+/* MENU SLIDER */
+.menu {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  margin: 10px auto;
+  }
+#slider {
+overflow: hidden;
+}
+#slider figure {
+position: relative;
+width: 200%;
+margin: 0;
+left: 0;
+animation: 20s slider infinite;
+}
+
+#slider figure img {
+width: 30%;
+float: center;
+}
+@keyframes slider {
+  0% {
+    right: -20;
+  }
+  20% {
+   left: 0;
+ }
+
+ 20% {
+   left: -80%;
+ }
+
+}
+
+.txtum {
+  font-family: "Noto Sans JP";
+  text-align: center;
+  left: 50%;
+  color: rgb(255, 255, 255);
+}
+.txtdois {
+  font-family: "Noto Sans JP";
+  text-align: center;
+  left: 50%;
+  color: rgb(141, 143, 16);
+  }
+
+.txttres {
+font-family: "Noto Sans JP";
+text-align: center;
+left: 50%;
+color:white;
+}
+
+
+
+.slider img{
+  max-width: 250px;
+}
+.slider {
+background-color: #389CEA;
+}
+
+/* FIM MENU SLIDER */
+
+section#habilidades {
+  padding: 3rem 10rem 3rem 10rem;
+  background-color: #389CEA;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section#habilidades h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+section#habilidades p {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+section#habilidades div {
+  display: flex;
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
+}
+
+section#habilidades span#html5 {
+  background-color: #ffffff;
+  width: 60%;
+  color: #389CEA;
+  padding: 0.3rem;
+  text-align: end;
+  border-radius: 0.9rem;
+}
+
+section#habilidades span#css3 {
+  background-color: white;
+  width: 45%;
+  color: #389CEA;
+  padding: 0.3rem;
+  text-align: end;
+  border-radius: 0.9rem;
+}
+
+section#habilidades span#js {
+  background-color: white;
+  width: 35%;
+  color: #389CEA;
+  padding: 0.3rem;
+  text-align: end;
+  border-radius: 0.9rem;
+}
+
+section#habilidades span#python {
+  background-color: white;
+  width: 60%;
+  color: #389CEA;
+  padding: 0.3rem;
+  text-align: end;
+  border-radius: 0.9rem;
+}
+
+section#habilidades span#flask {
+  background-color: white;
+  width: 55%;
+  color: #389CEA;
+  padding: 0.3rem;
+  text-align: end;
+  border-radius: 0.9rem;
+}
+
+section#habilidades span#sql {
+  background-color: white;
+  width: 60%;
+  color: #389CEA;
+  padding: 0.3rem;
+  text-align: end;
+  border-radius: 0.9rem;
+}
+
+section#contato {
+  padding: 3rem 10rem 3rem 10rem;
+  display: grid;
+  place-items: center;
+}
+
+section#contato h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+section#contato form {
+  width: 50%;
+  color: #fff;
+}
+
+section#contato form input,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.2rem;
+  margin: 0 0 1em;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+section#contato form label {
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+section#contato form button {
+  border: 1px solid #0066ff;
+  background-color: #fff;
+  color: #0066ff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+  width: 40%;
+}
+
+section#contato form button:disabled {
+  border: 1px solid rgb(170, 170, 170);
+  background-color: #fffd9e;
+  color: #fffd9e;
+}
+
+section#contato form button:hover:disabled {
+  border: 1px solid rgb(170, 170, 170);
+  background-color: #fffd9e;
+  color: #fffd9e;
+}
+
+section#contato form button:hover {
+  background-color: #fdfa30;
+  color: #389CEA;
+}
+
+section#contato div#redes a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+section#contato div#redes a:hover {
+  color: #fdfa30;
+  transition: 0.3s ease-in-out;
+}
+
+section#contato div#redes {
+  margin-bottom: 2rem;
+}
+
+section#contato h3 {
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+
+/* Loader de carregamento */
+
+section#contato div#carregamento{
+  display: none; 
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+section#contato div#carregamento p{
+  color: #389CEA;
+  font-weight: 700;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+
+/* Página Send */
